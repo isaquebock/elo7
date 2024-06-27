@@ -5,7 +5,7 @@
   Para ver quais vagas estão disponíveis
 
   ### Cenário: Visualizar vagas
-    Dado que estou na seção de vagas
+    Dado que estou na página de vagas
     Quando desço a página
     Então devo visualizar as vagás disponíveis
 <hr>
@@ -16,8 +16,8 @@
   Eu quero poder trocar de página<br>
   Para ver mais vagas disponíveis
 
-  ### Cenário: Paginação
-    Dado que estou na seção de vagas
+  ### Cenário: Paginar listagem
+    Dado que estou na página de vagas
     Quando clico em trocar página
     Então deve ser carregado a nova página de vagas
 <hr>
@@ -28,7 +28,7 @@
   Eu quero poder buscar uma vaga<br>
   Para ver uma vaga específica
 
-  ### Cenário: Paginação
+  ### Cenário: Busca por vaga
     Dado que estou na seção de vagas
     Quando digito no input de busca
     Então deve aparecer as vagas correspondente a busca

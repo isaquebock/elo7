@@ -6,14 +6,14 @@
             <h2 class="jobs__title">Vagas em aberto</h2>
     
             <div class="jobs__search">
-                <input type="text" placeholder="nome da vaga" [formControl]="searchControl">
+                <input type="text" placeholder="nome da vaga" data-cy="search" [formControl]="searchControl">
                 <img src="assets/icons/search.svg" alt="Icone de pesquisa">
             </div>
         </div>
         @if (jobs) {
         <div class="jobs__list">
 
-            <ul class="jobs__group">
+            <ul class="jobs__group" data-cy="jobs__group">
                 <h4 class="jobs__group-title">Desenvolvimento</h4>
 
                 @if (!loading) {
