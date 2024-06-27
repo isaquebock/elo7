@@ -7,7 +7,7 @@ Este projeto consiste em uma landing page para visualização dinâmica de vagas
 
 Para executar o projeto na sua máquina existem duas formas, mas antes certifique-se que você tem o projeto clonado em sua máquina.
 
-    git clone ...
+    git clone git@github.com:isaquebock/elo7.git
 
 ### Executando pelo Docker
 Para executar o projeto pelo docker, é simples, basta ter o Docker instalado na sua máquina e rodar o comando do docker na raiz do projeto *elo7*.
@@ -48,7 +48,7 @@ Para executar os testes unitários, primeiro certifique-se que você possui o No
 
 Clone o projeto *elo7*.<br>
 
-    git clone ...
+    git clone git@github.com:isaquebock/elo7.git
 
 Execute o comando de testes e veja no terminal cada teste sendo executado.<br>
 
@@ -67,11 +67,3 @@ Para executar os testes automatizados, primeiro certifique-se que você possui o
 *Aqui suponho que você já possui o projeto clonado no seu computador.*
 
 Antes de executar os testes automatizados, dê uma olhada nos cenários de testes propostos: **[CENÁRIOS DE TESTES](./docs/scenarios.md)**
-
-Execute o comando de testes e veja no terminal cada teste sendo executado.<br>
-
-    ng test
-    
-Para visualizar a cobertura de testes, execute:<br>
-
-    ng test --no-watch --code-coverage
