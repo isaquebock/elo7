@@ -1,7 +1,7 @@
 # 🚀 Landing Page de Vagas - Elo7
 
 ## 📄 Descrição
-Este projeto consiste em uma landing page para visualização dinâmica de vagas de emprego. Ele permite aos usuários visualizar diversas oportunidades de trabalho de forma organizada e filtrar as vagas por categoria e localização conforme suas preferências.
+Este projeto consiste em uma landing page para visualização dinâmica de vagas de emprego.
 
 ## 🏃‍♂️ Executando o projeto
 
