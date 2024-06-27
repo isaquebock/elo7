@@ -39,7 +39,7 @@ export class JobsComponent implements OnInit, AfterViewInit {
    * Search control
    */
   public searchControl: FormControl = new FormControl();
-
+  
   /**
    * @internal
    */
@@ -65,10 +65,12 @@ export class JobsComponent implements OnInit, AfterViewInit {
           this.loading = false;
         }),
       )
-      .subscribe((response: jobs | null) => {
-        if(response) {
-          this.loading = true;
-          this.jobs = response;
+      .subscribe({
+        next: (response: jobs | null) => {
+          if(response) {
+            this.loading = true;
+            this.jobs = response;
+          }
         }
       });
   }

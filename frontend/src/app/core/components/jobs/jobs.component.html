@@ -27,8 +27,6 @@
                             Não há vagas
                         </li>
                     }
-                } @else {
-                    <div class="jobs__loading"></div>
                 }
             </ul>
         </div>
@@ -41,6 +39,10 @@
             #paginator
         >
         </mat-paginator>
+        } @else {
+            <li class="jobs__item">
+                Não há vagas
+            </li>
         }
 
     </div>
