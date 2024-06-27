@@ -1,0 +1,88 @@
+@import '../../../../variables';
+
+
+.statement {
+    background:  #F4F5F7;
+    margin-top: 80px;
+    padding: 50px 15px;
+
+    &__container {
+        max-width: 1500px;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    &__image, &__texts {
+        width: 100%;
+    }
+
+    &__image {
+        border-radius: 16px;
+    }
+
+    &__texts {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+    }
+
+    &__title, &__subtitle, &__description {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 32px;
+        margin-bottom: 4px;
+        color: $gray-600;
+        margin-top: 40px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        margin-bottom: 24px;       
+        color: $yellow-dark;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 24px;      
+        color: $gray-600;  
+    }
+
+    @media (min-width: 600px) {
+        padding: 50px;
+
+        &__image, &__texts {
+            width: 50%;
+        }
+
+        &__image {
+            height: 270px;
+            object-fit: cover
+        }
+
+        &__container {
+            flex-wrap: nowrap;
+        }
+
+        &__title {
+            margin-top: 0px;
+        }
+
+        &__texts {
+            margin-left: 40px;
+        }
+
+        &__description {
+            line-height: 30px;      
+            font-size: 20px;
+        }
+    }
+}

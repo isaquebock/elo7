@@ -1,0 +1,12 @@
+services:
+  frontend:
+    build:
+      context: ./frontend  # diretório onde está o Dockerfile da primeira aplicação web
+    ports:
+      - "80:80"     # mapeamento de porta (porta do container : porta do host)
+
+  backend:
+    build:
+      context: ./backend  # diretório onde está o Dockerfile da segunda aplicação web
+    ports:
+      - "3000:3000"     # mapeamento de porta (porta do container : porta do host)
