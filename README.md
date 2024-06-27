@@ -12,9 +12,9 @@ Para executar o projeto na sua máquina existem duas formas, mas antes certifiqu
 ### Executando pelo Docker
 Para executar o projeto pelo docker, é simples, basta ter o Docker instalado na sua máquina e rodar o comando do docker na raiz do projeto *elo7*.
 
-    RUN docker compose -up --build
+    RUN docker compose up --build
 
-Você vai conseguir visualizar o projeto em _http://localhost:80_ 
+Você vai conseguir visualizar o projeto em _http://localhost_ 
 
 ### Executando local
 Para executar local, primeiro certifique-se que você possui o Node.js (*LTS*) e o Angular CLI instalado.
@@ -58,7 +58,7 @@ Para visualizar a cobertura de testes, execute:<br>
 
     ng test --no-watch --code-coverage
 
-Já existe um coverage disponível, com o projeto clonado abra **[COVERAGE](./coverage/frontend/index.html)**
+Já existe um coverage disponível, com o projeto clonado abra **[COVERAGE](./frontend/coverage/frontend/index.html)**
 
 ### Testes automatizados (*e2e*)
 
@@ -66,4 +66,4 @@ Para executar os testes automatizados, primeiro certifique-se que você possui o
 
 *Aqui suponho que você já possui o projeto clonado no seu computador.*
 
-Antes de executar os testes automatizados, dê uma olhada nos cenários de testes propostos: **[CENÁRIOS DE TESTES](./docs/scenarios.md)**
+Antes de executar os testes automatizados, dê uma olhada nos cenários de testes propostos: **[CENÁRIOS DE TESTES](./frontend/docs/scenarios.md)**
