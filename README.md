@@ -3,7 +3,7 @@
 ## 📄 Descrição
 Este projeto consiste em uma landing page para visualização dinâmica de vagas de emprego. Ele permite aos usuários visualizar diversas oportunidades de trabalho de forma organizada e filtrar as vagas por categoria e localização conforme suas preferências.
 
-## 📄 Executando o projeto
+## 🏃‍♂️ Executando o projeto
 
 Para executar o projeto na sua máquina existem duas formas, mas antes certifique-se que você tem o projeto clonado em sua máquina.
 
@@ -60,6 +60,8 @@ Para visualizar a cobertura de testes, execute:<br>
 
 Já existe um coverage disponível, com o projeto clonado abra **[COVERAGE](./frontend/coverage/frontend/index.html)**
 
+![grafana](./frontend/docs/images/coverage.png)
+
 ### Testes automatizados (*e2e*)
 
 Para executar os testes automatizados, primeiro certifique-se que você possui o Node.js (*LTS*) instalado.
@@ -67,3 +69,12 @@ Para executar os testes automatizados, primeiro certifique-se que você possui o
 *Aqui suponho que você já possui o projeto clonado no seu computador.*
 
 Antes de executar os testes automatizados, dê uma olhada nos cenários de testes propostos: **[CENÁRIOS DE TESTES](./frontend/docs/scenarios.md)**
+
+Com o projeto rodando, execute o comando abaixo para iniciar os testes automatizados<br>
+
+    npm run cypress:web
+   
+## 👀 Oservabilidade
+Para observar a aplicação foi implementado Grafana Faro, direto no index.html, nele é possivel pegar insights através de métricas de perfomance e monitoramento.
+
+![grafana](./frontend/docs/images/grafana.png)
